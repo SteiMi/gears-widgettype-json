@@ -23,6 +23,15 @@ define(['jquery', './widget', '../utils'],
         //  5. uuid: Unique identifier for each instance of a widget.
 
 
+        //Every instantiable widgettype needs a description object. 'name' and
+        //'details' will be shown to the user during widget creation.
+        JsonWidget.description = {
+            id: 'HistoryTableWidget',
+            name: 'History Table',
+            details: 'Shows the data history in a table.'
+        };
+
+
         //getBindableComponents defines so called 'widget components'.
         //A widget component can be bound to a component in EveryAware.
 
