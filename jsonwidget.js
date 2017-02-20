@@ -26,9 +26,9 @@ define(['jquery', 'app/widgets/widget', 'app/utils'],
         //Every instantiable widgettype needs a description object. 'name' and
         //'details' will be shown to the user during widget creation.
         JsonWidget.description = {
-            id: 'HistoryTableWidget',
-            name: 'History Table',
-            details: 'Shows the data history in a table.'
+            id: 'JsonWidget',
+            name: 'Json',
+            details: 'Shows the data as a json string.'
         };
 
 
