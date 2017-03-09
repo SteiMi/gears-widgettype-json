@@ -1,7 +1,9 @@
 //This is an example widget type for EveryAware Gears. It takes the data of a
 //component and displays it as a simple json string.
 
-define(['jquery', 'app/widgets/widget', 'app/utils', 'css!jsonwidget'],
+define(['jquery', 'app/widgets/widget', 'app/utils',
+        'css!http://rawgit.com/SteiMi/gears-widgettype-json/master/jsonwidget.css'
+    ],
     function($, Widget, utils) {
 
 
