@@ -1,7 +1,7 @@
 //This is an example widget type for EveryAware Gears. It takes the data of a
 //component and displays it as a simple json string.
 
-define(['jquery', 'app/widgets/widget', 'app/utils'],
+define(['jquery', 'app/widgets/widget', 'app/utils', 'css!jsonwidget'],
     function($, Widget, utils) {
 
 
@@ -84,7 +84,7 @@ define(['jquery', 'app/widgets/widget', 'app/utils'],
             //We don't need to access individual data points since we just
             //stringify the whole data object here so we don't need to access
             //layer 5 for this widget type.
-            return $('<div>' +
+            return $('<div class="jsonwidget-content">' +
                 JSON.stringify(this.getFilteredData()
                     .feeds[this.feedId]
                     .sources[this.sourceId]
