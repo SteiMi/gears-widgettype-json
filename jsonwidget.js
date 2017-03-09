@@ -1,6 +1,18 @@
 //This is an example widget type for EveryAware Gears. It takes the data of a
 //component and displays it as a simple json string.
 
+//Widget types are implemented as RequireJS modules. Therefore, we first define
+//our dependencies:
+//  1. We need jQuery. jQuery is already available on the EveryAware servers, so
+//     we can just require 'jquery'.
+//  2. Every widget type should inherit attributes and methods from the base
+//     widget class, so we require this base widget with 'app/widgets/widget'
+//  3. Since we use the 'inheritPrototype' helper function to inherit the
+//     attributes and methods from the base widget class, we have to require
+//     'app/utils'.
+//  4. This widget type needs some css. You can either write your css in a
+//     separate css file and require its url with the 'css!' loader, like
+//     shown here, or you add your styles in JavaScript.
 define(['jquery', 'app/widgets/widget', 'app/utils',
         'css!http://rawgit.com/SteiMi/gears-widgettype-json/master/jsonwidget.css'
     ],
